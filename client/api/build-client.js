@@ -5,7 +5,7 @@ const buildClient = ({ req }) => {
     // We are on the server!
     // http://SERVICENAME.NAMESPACE.svc.cluster.local
       return axios.create({
-      baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      baseURL: 'http://www.testing-domain.fun',
       headers: req.headers,
     });
   
